@@ -1,0 +1,82 @@
+<window id="12900">
+    <defaultcontrol always="true">100</defaultcontrol>
+    <controls>
+        <control type="group">
+            <left>60</left>
+            <top>50</top>
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>300</width>
+                <height>60</height>
+                <font>font_vhs_huge</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>|| PAUSE</label>
+                <visible>Player.Paused</visible>
+            </control>
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>300</width>
+                <height>60</height>
+                <font>font_vhs_huge</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>► PLAY</label>
+                <visible>Player.Playing</visible>
+            </control>
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>300</width>
+                <height>60</height>
+                <font>font_vhs_huge</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>FFW ►► $INFO[Player.PlaySpeed]X</label>
+                <visible>Player.Forwarding</visible>
+            </control>
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>300</width>
+                <height>60</height>
+                <font>font_vhs_huge</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>◄◄ REW $INFO[Player.PlaySpeed]X</label>
+                <visible>Player.Rewinding</visible>
+            </control>
+        </control>
+
+        <control type="group">
+            <left>0</left> 
+	    <top>400</top>
+
+            <control type="label">
+                <right>25</right>
+                <top>0</top>
+                <width>500</width>
+                <height>60</height>
+                <align>right</align>
+                <font>font_vhs_large</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[Player.Time(hh:mm:ss)] / $INFO[Player.Duration(hh:mm:ss)]</label>
+            </control>
+        </control>
+
+        <control type="button" id="100">
+            <left>-10</left>
+            <top>-10</top>
+            <width>1</width>
+            <height>1</height>
+            <onup>Close</onup>
+            <ondown>Close</ondown>
+            <onleft>PlayerControl(Backward)</onleft>
+            <onright>PlayerControl(Forward)</onright>
+            <onclick>PlayerControl(Play)</onclick>
+        </control>
+    </controls>
+</window>
