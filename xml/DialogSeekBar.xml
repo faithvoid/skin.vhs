@@ -1,0 +1,51 @@
+<window id="115">
+    <defaultcontrol>1</defaultcontrol>
+    <visible>Player.HasVideo + [Player.Seeking | Player.DisplayAfterSeek]</visible>
+    <controls>
+        <control type="group">
+            <left>60</left>
+            <top>50</top>
+            
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>400</width>
+                <height>60</height>
+                <font>font_vhs_huge</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>SEEK ◄◄</label>
+                <visible>String.StartsWith(Player.SeekStepSize,-) | String.StartsWith(Player.SeekOffset,-) | Player.Rewinding</visible>
+            </control>
+
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>400</width>
+                <height>60</height>
+                <font>font_vhs_huge</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>SEEK ►►</label>
+                <visible>![String.StartsWith(Player.SeekStepSize,-) | String.StartsWith(Player.SeekOffset,-) | Player.Rewinding]</visible>
+            </control>
+        </control>
+
+        <control type="group">
+            <left>0</left>
+            <top>400</top>
+
+            <control type="label">
+                <right>25</right>
+                <top>0</top>
+                <width>500</width>
+                <height>60</height>
+                <align>right</align>
+                <font>font_vhs_large</font>
+                <textcolor>vhs_white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[Player.Time(hh:mm:ss)] / $INFO[Player.Duration(hh:mm:ss)]</label>
+            </control>
+        </control>
+    </controls>
+</window>
