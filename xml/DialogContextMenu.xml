@@ -1,15 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="100">
     <defaultcontrol always="true">996</defaultcontrol>
+
     <controls>
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <width>1280</width>
-            <height>720</height>
-            <texture>vhs_blue</texture>
-            <colordiffuse>FF000000</colordiffuse>
+            <width>720</width>
+            <height>480</height>
+            <texture colordiffuse="FF000000">colors/white.png</texture>
         </control>
-
+    
         <control type="label">
             <left>40</left>
             <top>30</top>
@@ -21,7 +22,8 @@
         </control>
         
         <control type="label">
-            <left>940</left> <top>30</top>
+            <right>40</right>
+            <top>30</top>
             <width>300</width>
             <height>40</height>
             <align>right</align>
@@ -32,7 +34,7 @@
 
         <control type="grouplist" id="996">
             <left>40</left>
-            <top>120</top>
+            <top>100</top>
             <width>640</width>
             <height>320</height>
             <onleft>996</onleft>
@@ -41,12 +43,14 @@
             <ondown>996</ondown>
             <scrolltime>0</scrolltime>
             <orientation>vertical</orientation>
-            <itemgap>10</itemgap> 
+            <itemgap>0</itemgap>
+            
             <control type="button" id="1000">
                 <width>640</width>
-                <height>45</height>
+                <height>38</height>
                 <font>font_vhs_medium</font>
-                <textoffsetx>40</textoffsetx> <textcolor>vhs_white</textcolor>
+                <textoffsetx>40</textoffsetx>
+                <textcolor>vhs_white</textcolor>
                 <focusedcolor>vhs_green</focusedcolor>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
@@ -55,14 +59,14 @@
 
         <control type="group">
             <left>40</left>
-            <top>120</top>
-            <width>40</width>
+            <top>100</top>
+            <width>30</width>
             <height>320</height>
             <control type="label">
                 <left>0</left>
                 <top>$INFO[Container(996).Row]</top>
-                <width>40</width>
-                <height>45</height>
+                <width>30</width>
+                <height>38</height>
                 <font>font_vhs_medium</font>
                 <textcolor>vhs_green</textcolor>
                 <label>►</label>
