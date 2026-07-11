@@ -1,0 +1,16 @@
+<addon id="skin.vhs" version="1.0.0" name="VHS" provider-name="faithvoid">
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0"/>
+    </requires>
+    <extension point="xbmc.gui.skin">
+        <res width="720" height="480" aspect="4:3" folder="xml"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Take a trip to the past with "VHS", a minimalist VHS-style skin for Kodi, designed for CRTs.</summary>
+        <description lang="en">Take a trip to the past with "VHS", a minimalist VHS-style skin for Kodi, designed for CRTs.</description>
+        <assets>
+            <icon></icon>
+        </assets>
+    </extension>
+</addon>
