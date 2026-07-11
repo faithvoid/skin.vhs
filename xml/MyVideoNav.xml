@@ -1,0 +1,74 @@
+<window id="25">
+    <defaultcontrol always="true">50</defaultcontrol>
+    <backgroundcolor>vhs_black</backgroundcolor>
+    <views>50</views>
+    <onload>SetProperty(vhs_mode,TRACKING)</onload>
+    
+    <controls>
+        <control type="label">
+            <left>40</left>
+            <top>30</top>
+            <width>300</width>
+            <height>40</height>
+            <font>font_vhs_large</font>
+            <textcolor>vhs_white</textcolor>
+            <label>$INFO[Window.Property(vhs_mode)]</label>
+        </control>
+        
+        <control type="label">
+            <right>40</right>
+            <top>30</top>
+            <width>300</width>
+            <height>40</height>
+            <align>right</align>
+            <font>font_vhs_large</font>
+            <textcolor>vhs_white</textcolor>
+            <label>$INFO[System.Time(hh:mm:ss)]</label>
+        </control>
+
+        <control type="list" id="50">
+            <left>40</left>
+            <top>100</top>
+            <width>640</width>
+            <height>320</height>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <scrolltime>0</scrolltime>
+            
+            <itemlayout height="38">
+                <control type="label">
+                    <left>40</left>
+                    <top>0</top>
+                    <width>580</width>
+                    <height>30</height>
+                    <font>font_vhs_medium</font>
+                    <textcolor>vhs_white</textcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </itemlayout>
+            
+            <focusedlayout height="38">
+                <control type="label">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>30</width>
+                    <height>30</height>
+                    <font>font_vhs_medium</font>
+                    <textcolor>vhs_green</textcolor>
+                    <label>►</label>
+                </control>
+                <control type="label">
+                    <left>40</left>
+                    <top>0</top>
+                    <width>580</width>
+                    <height>30</height>
+                    <font>font_vhs_medium</font>
+                    <textcolor>vhs_green</textcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </focusedlayout>
+        </control>
+    </controls>
+</window>
