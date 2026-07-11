@@ -1,0 +1,7 @@
+<colors>
+    <color name="vhs_blue">FF0000D0</color>
+    <color name="vhs_black">FF000000</color>
+    <color name="vhs_white">FFFFFFFF</color>
+    <color name="vhs_gray">FF999999</color>
+    <color name="vhs_green">FF00FF00</color>
+</colors>
